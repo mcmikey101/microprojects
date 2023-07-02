@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@media (min-width: 768px) and (max-width: 1000px) {
+	.defs li {
+		font-size: 18px !important;
+	}
+	.placehold{
+		font-size: 24px !important;
+	}
+	input:focus ~ .placehold,
+	input:not(focus):valid ~ .placehold{
+		font-size: 14px !important;
+}
+}
+* {
+	font-family: "Libre Baskerville";
+}
+main{
+	display: grid;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+}
+.searchdiv{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 50vw;
+	height: 100%;
+}
+#error{
+	text-align: center;
+	font-size: 30px;
+	margin: 5px;
+}
+button, input{
+	width: 100%;
+	height: 60px;
+	font-size: 38px;
+	border-radius: 20px;
+	transition: 0.2s ease all;
+}
+button{
+	background-color: rgb(119, 164, 255);
+}
+button:hover{
+	background-color: rgb(73, 128, 239);
+}
+.user-input{
+	width: 30vw;
+	position: relative;
+}
+.placehold{
+	font-size: 32px;
+	top: 12px;
+	left: 6px;
+	position: absolute;
+	pointer-events: none;
+	user-select: none;
+	transition: 0.2s ease all;
+	background-color: white;
+}
+input:focus ~ .placehold,
+input:not(focus):valid ~ .placehold{
+	font-size: 1em;
+	top: -10px;
+	left: 10px;
+}
+.defs{
+	list-style: none;
+	text-align: center;
+}
+.defs li{
+	margin-top: 15px;
+	font-size: 25px;
+	font-weight: 700;
+}
+.definition{
+	opacity: 0; 
+	transform: translateY(60px);
+	animation: slide 0.4s ease forwards;
+}
+#svgbook{
+	margin-bottom: 50px;
+	margin-top: 30px;
+}
+@keyframes slide{
+	0% {
+		opacity: 0; 
+		transform: translateY(60px);
+	}
+	100% {
+		opacity: 100;
+		transform: translateY(0);
+	}
+}

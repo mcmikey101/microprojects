@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body{
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-weight: 550;
+    text-align: center;
+}
+.panel{
+    font-size: 24px;
+    width: 900px;
+    margin: 0 auto;
+    height: max-content;
+    display: flex;
+    justify-content: сутеук;
+    border-radius: 10px;
+    opacity: 0;
+    animation: panelfade 0.6s ease 0.4s forwards;
+}
+.main{
+    background-color: #AABCFD;
+    width: 1100px;
+    margin: 10px auto;
+    height: 0px;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    animation: mainslide 1s ease 0.1s forwards;
+}
+.main p{
+    position: relative;
+    top: 50px;
+}
+.mainpart3{
+    font-size: 24px;
+}
+.skillstoggle{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+    top: 30px;
+    background-color: #7775f7;
+    box-shadow: 0px 6px 0 black;
+    transition-duration: 0.2s;
+    opacity: 0;
+    transition-duration: 0.4s;
+    animation: panelfade 0.6s ease 3.2s forwards;
+}
+.skillstoggle:active{
+    position: relative;
+    top: 33px;  
+    box-shadow: 0px 0px 0 black;
+}
+.block1:hover, .block2:hover, .block3:hover{
+    border-radius: 30px;
+}
+.arrow{
+    display: inline-block;
+    font-size: 46px;
+    font-family: Ubuntu;
+    transform: rotate(90deg);
+    position: relative;
+    left: 4px;
+}
+.skills{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.skills div{
+    width: 210px;
+    height: 0px;
+    background-color: #AABCFD;
+    font-size: 26px;
+    margin: 15px;
+    text-align: center;
+    border: 0px solid black;
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid black;
+    overflow: hidden;
+    transition-duration: 0.4s;
+    opacity: 0;
+    animation: panelfade 0.6s ease 0.4s forwards;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.projectsheader{
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+.project1, .project2, .project3, .project4{
+    width: 900px;
+    height: 0px;
+    border-radius: 30px;
+    background-color: #AABCFD;
+    margin: 10px auto;
+    overflow: hidden;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+.projectreview1, .projectreview2, .projectreview3, .projectreview4{
+    background-color: #6380E7;
+    width: 300px;
+    height: 225px;
+    position: relative;
+    bottom: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.detailsheader{
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+.details{
+    width: 900px;
+    height: 0px;
+    border-radius: 10px;
+    background-color: #AABCFD;
+    margin: 0 auto;
+    transition-duration: 0.4s;
+}
+.contacts{
+    width: 100%;
+    background-color: #AABCFD;
+    opacity: 0;
+    animation: panelfade 1.2s ease 0.8s forwards;
+}
+.contactscontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0px auto;
+}
+.contacts button{
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #6380E7;
+    margin: 5px;
+}
+.back{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid black;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #AABCFD;
+    position: fixed;
+    left: 1400px;
+    top: 620px;
+}
+@keyframes panelfade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@keyframes mainslide{
+    from{
+        height: 0px;
+    }
+    to{
+        height: 410px;
+    }
+}
+.mainpart1{
+    position: relative;
+    right: 240px;
+    opacity: 0;
+    transition-duration: 0.6s;
+    animation: mainpartslide 0.8s ease 1s forwards;
+}
+.mainpart2{
+    position: relative;
+    right: 240px;
+    opacity: 0;
+    transition-duration: 0.6s;
+    animation: mainpartslide 0.8s ease 1.8s forwards;
+}
+.mainpart3{
+    position: relative;
+    right: 240px;
+    opacity: 0;
+    transition-duration: 0.6s;
+    animation: mainpartslide 0.8s ease 2.6s forwards;
+}
+.mainpart4{
+    opacity: 0;
+    transition-duration: 0.4s;
+    animation: panelfade 0.6s ease 3.2s forwards;
+}
+@keyframes mainpartslide{
+    from{
+        opacity: 0%;
+        position: relative;
+        right: 240px;
+    }
+    to{
+        opacity: 100%;
+        position: relative;
+        right: 0px;
+    }
+}

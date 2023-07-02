@@ -1,0 +1,94 @@
+* {
+    font-family: Arial;
+    text-align: center;
+}
+.panel {
+    display: flex;
+    justify-content: center;
+}
+.panelbtn {
+    margin: 10px 30px 10px 30px;
+    font-size: 36px;
+    text-decoration: none;
+    color: black;
+}
+.panelbtn:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 48px;
+    opacity: 0%;
+    position: relative;
+    right: 160px;
+    animation-name: slide;
+    animation-duration: 0.8s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+.introcont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro1{
+    font-size: 28px;
+    opacity: 0;
+    position: relative;
+    right: 160px;
+    animation-name: slide;
+    animation-duration: 0.8s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+.intro2{
+    font-size: 28px;
+    opacity: 0;
+    position: relative;
+    right: 160px;
+    animation-name: slide;
+    animation-duration: 0.8s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+}
+.intro3{
+    font-size: 28px;
+    opacity: 0;
+    position: relative;
+    right: 160px;
+    animation-name: slide;
+    animation-duration: 0.8s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.qstns{
+    font-size: 36px;
+}
+.qstcont{
+    display: flex;
+    justify-content: center;
+}
+.question{
+    margin: 0 60px 0 60px;
+    font-size: 26px;
+}
+.resulthead{
+    font-size: 36px;
+}
+.imgcount{
+    display: flex;
+    justify-content: center;
+}
+.imgcont img{
+    max-width: 400px;
+    max-height: 300px;
+}
+@keyframes slide{
+    0%{
+        opacity: 0%;
+        right: 160px;
+    }
+    100%{
+        opacity: 100%;
+        right: 0px;
+    }
+}
